@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="informe.css">
+
+  </head>
+
+  <body>
+    <nav class="navbar">  
+        <div class="nav-wrapper">
+            <a href="index.html">
+                <img class="nav-logo" src="icons/ASVO_Logo.png" alt="">
+            </a>
+            <menu>
+              <a href="index.html">
+                  <li>Actividades</li>
+              </a>
+              <a href="informes.html">
+                  <li>Informes</li>
+              </a>
+          </menu>
+            <div class="perfil">
+                <button>perfil</button>
+            </div>    
+        </div>  
+    </nav>
+
+    <section class="main-info">
+      <div class="panel">
+        <form action="" class="form-section infoSalida">
+          <h3>Informacion de la salida</h3>
+          <div class="form-section">
+            <label for="name">Area Silvestre o lugar protegido </label>
+            <input type="text" name="name" id="name" required value="Parque nacional Chirripo">
+          </div>
+          <div class="form-section">
+            <label for="cupos">Personal responsable: </label>
+            <input type="text" name="cupos" id="cupos" min="1" max="100" step="1" value="Juan Carlos Robles Quesada"/>
+          </div>
+          <div class="form-section">
+            <label for="labores">Fecha y hora de ingreso: </label>
+            <input type="datetime-local" name="labores" id="labores" required>
+          </div>
+          <div class="form-section">
+            <label for="labores">Fecha y hora de salida: </label>
+            <input type="datetime-local" name="labores" id="labores" required>
+          </div>
+          <div class="form-section">
+            <a href="informe0.html">
+              <button type="button" class="siguiente">Siguiente</button>
+            </a>
+              
+          </div>
+        </form>
+      </div>
+  </body>
+</html>
+          

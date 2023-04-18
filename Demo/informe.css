@@ -1,0 +1,109 @@
+html { 
+  background-color: #000000; 
+} 
+
+body{
+  color: rgb(24, 109, 255);
+  min-height: 100vh;
+}
+
+.panel{
+  padding: 10px 0px;
+}
+
+form{
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.main-info{
+  display: flex;
+  justify-content: center;
+  align-items:start;
+  width: 95%;
+  margin: auto;
+}
+
+h3{
+
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+label{
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.infoSalida .form-section{
+  padding: 0rem 1rem;
+}
+
+.infoSalida input{
+  margin-bottom: 1rem;
+  width: 90%;
+  padding: 0.8rem;
+  border-radius: 4px;
+  border: 1px solid #a4a5a4;
+}
+
+.form-section button{
+  border-radius: 10px;
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  border: 1px solid #ffffff;
+  background-color: rgb(24, 109, 255);
+  color: white;
+  width: 100%;
+}
+
+.asistentesSalida{
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* table{
+  table-layout: fixed;
+  border-collapse: collapse;
+
+}
+
+.asistentesSalida thead th:nth-child(1) {
+  width: 140px;
+}
+
+.asistentesSalida thead th:nth-child(2) {
+  width: auto;
+}
+
+.asistentesSalida thead th:nth-child(3) {
+  width: 10px;
+}
+.asistentesSalida td{
+  margin: 0px;
+  padding: 2px;
+}
+
+.objsalida table {
+color: aliceblue;
+}
+
+.objSalida table thead th:nth-child(1) {
+  width: 100%;
+}
+
+.objSalida table thead th:nth-child(2) {
+  width: auto;
+}
+
+*/
+.objSalida input{
+  width:70px;
+}
+

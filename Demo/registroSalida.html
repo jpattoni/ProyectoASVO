@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Salida</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+  <div class="panel">
+    <form action="" class="form-example">
+      <div class="form-example">
+        <label for="name">Nombre </label>
+        <input type="text" name="name" id="name" required>
+      </div>
+      <div class="form-example">
+        <label for="labores">Labores: </label>
+        <input type="text" name="labores" id="labores" required>
+      </div>
+      <div class="form-example">
+        <label for="cupos">Cupos: </label>
+        <input type="number" name="cupos" id="cupos" min="1" max="100" step="1" />
+      </div>
+      <div class="form-example">
+        <label for="datetime">Fecha de inicio: </label>
+        <input type="datetime-local" name="datetime" id="datetime" />
+      </div>
+      <div class="form-example">
+        <label for="datetime">Fecha final: </label>
+        <input type="datetime-local" name="datetime" id="datetime" />
+      </div>
+      <div class="form-example">
+        <label for="datetime">Lugar de la salida: </label>
+        <select name="select">
+          <option value="value1">P.N. Volcan Irazu</option>
+          <option value="value2" selected>Buena Vista</option>
+          <option value="value3">Otro</option>
+        </select>
+      </div>
+      <div class="form-example">
+        <input type="submit" value="registrar">
+      </div>
+  </div>
+  </form>
+</body>
+
+</html>

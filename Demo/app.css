@@ -1,0 +1,302 @@
+html {
+  box-sizing: content-box; 
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  background-color: #60a9ff;
+}
+
+.navbar{
+  background-color: rgb(239, 246, 253);
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: auto;
+}
+
+.nav-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding-right: 2px;
+  width: 50px;
+}
+
+.navbar menu{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color:#1454a1
+}
+
+menu li {
+  padding: 0.5rem; 
+}
+
+menu li:first-of-type{
+  border-right: 0.1rem solid rgba(146, 181, 249, 0.6); 
+  }
+
+.perfil button{
+  border: none;
+  border-radius: 40%;
+  color: #1454a1;
+  background-color: hsl(213, 100%, 91%);
+  padding: 0.5rem 0.7rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.main-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.panel {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+
+}
+
+.evento-plan {
+  border-bottom: 3px solid #cbd8e5;
+}
+
+.evento-plan:last-child {
+  border-bottom: none;
+}
+
+.evento-type{
+  border: 1px solid #9dd1ff;
+  border-radius: 5px;
+  color: #348efe;
+  display: inline-block;
+  padding: 5px 25px;
+  text-decoration: none;
+  margin: 10px 0 25px 0;
+  text-align: left;
+}
+
+.label-type{
+  text-align: left;
+}
+
+.evento-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+  max-height: 100px;
+}
+
+.evento-header {
+  color: #888;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+.evento-label{
+  font-size: 16px;
+  color: #016ff9;
+}
+.evento-features {
+  margin: 0px 0 25px;
+  color: #016ff9;
+  text-align: left;
+}
+
+.evento-features-item {
+  font-weight: 400;
+  letter-spacing: 0px;
+  font-size: 17px;
+  line-height: 1.5;
+  padding: 15px 0;
+  text-transform: none;
+
+}
+
+.evento-features h3{
+  margin-left: 10px;
+  display: inline;
+}
+
+.description{
+  border-top: 1px solid #d1e0f1;  
+  margin-left: 10px;
+}
+
+.evento-info1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+
+.evento-price {
+  color:  #016ff9;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.evento-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348efe;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+  transition: all 200ms ease-in-out;
+}
+
+.evento-button.masinfo:hover, .evento-button.masinfo:focus {
+  background-color: #e1f1ff;
+}
+.evento-button.anotarse:hover, .evento-button.anotarse:focus {
+  background-color: rgb(237, 255, 247);
+}
+
+.evento-button.anotarse {
+  border: 1px solid rgb(81, 229, 160);
+  color: rgb(59, 172, 119);
+}
+
+.evento-button.anotarse.is-featured {
+  background-color: rgb(68, 191, 134);
+  color: white;
+}
+
+.evento-button.anotarse.is-featured:hover, evento-button.anotarse.is-featured:focus {
+  background-color:rgb(179, 198, 75);
+  border: rgb(179, 198, 75);
+  color: white;
+}
+
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+th[scope='col'] {
+    background-color: #696969;
+    color: #fff;
+}
+
+th[scope='row'] {
+    background-color: #d7d9f2;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+
+.form-section{
+  margin: 10px;
+  text-align: left;
+}
+
+
+@media (min-width: 900px){
+  .panel {
+    flex-direction: row;
+  }
+
+  .evento-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 10px 50px 25px 50px;
+  }
+
+  .evento-plan:last-child {
+    border-right: none;
+  }
+
+  .evento-info1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+  }
+
+  .evento-img {
+    margin-bottom: 25px;
+    max-width: 200px;
+  }
+
+  .description{
+    border-top: 1px solid #141618;  
+
+  }
+
+  .evento-features h3{
+    margin-left: 10px;
+    display: inline;
+  }
+  
+  .nav-logo {
+    width: 150px;
+  }
+
+  .navbar{
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin-bottom: 3rem;
+  }
+  .navbar menu{
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color:#1454a1;
+    justify-content: space-between;
+  }
+  menu li{
+    margin: 0rem 6rem 0rem 6rem;
+  }
+  menu li:first-of-type{
+    border: none;
+  }
+  menu li:hover{
+    background-color: rgba(184, 226, 240, 0.5);
+  }
+
+  .perfil button{
+    font-size: 1.3rem;
+  }
+  
+}
