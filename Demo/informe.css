@@ -68,6 +68,66 @@ label{
   flex-flow: row wrap;
 }
 
+.asistentesSalida h2, .asistentesSalida div{
+  width: 40%;
+}
+
+.asistentesSalida h2{
+  font-size: 1.07rem;
+  margin-bottom: 0.5rem;
+  padding: 0rem 1rem;
+  
+}
+
+.asistentesSalida h2:nth-child(even) {
+  text-align: end;
+}
+
+.asistentesSalida div{
+  margin: 0.3rem 0rem;
+  background-color: #e9e9e9;
+  padding: 0.3rem 1rem; 
+}
+
+.asistentesSalida div p:nth-child(odd) {
+  font-weight: 600;
+}
+
+
+.asistentesSalida div:nth-child(even) {
+  text-align: end;
+}
+
+.asistentesSalida input{
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-left: 2rem;
+}
+
+div .agregarOtro{
+  border-radius: 4px;
+  background-color: rgb(24, 109, 255);
+  color: rgb(238, 244, 255);
+  border: solid 1px rgb(24, 109, 255);
+  width: fit-content;
+  padding: 0.2rem 1rem;
+  font-size: inherit;
+}
+
+select.agregarOtro{
+  font-size: 0.8rem;
+  border-radius: 4px;
+  background-color: rgb(238, 244, 255);
+  color: rgb(24, 109, 255);
+  border: solid 1px rgb(24, 109, 255);
+}
+
+button.agregarOtro{
+  padding: 0.1rem 1rem;
+}
+
+
+
 /* table{
   table-layout: fixed;
   border-collapse: collapse;
