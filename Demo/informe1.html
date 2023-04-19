@@ -2,307 +2,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="app.css">
-    <link rel="stylesheet" href="informe.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="informe.css">
 
 </head>
 
 <body>
-    <nav class="navbar">  
-        <div class="nav-wrapper">
-            <a href="index.html">
-                <img class="nav-logo" src="icons/ASVO_Logo.png" alt="">
-            </a>
-            <menu>
-              <a href="index.html">
-                  <li>Actividades</li>
-              </a>
-              <a href="informes.html">
-                  <li>Informes</li>
-              </a>
-          </menu>
-            <div class="perfil">
-                <button>perfil</button>
-            </div>    
-        </div>  
-    </nav>
-
-<br>
-          <div class="form-section asistentesSalida">
-            <h3>Asistentes de la salida</h3>
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">Nombre y cedula</th>
-                  <th scope="col">Asistencia</th>
-                </tr>
-                <tr>
-                  <td>
-                    <p>
-                      Juan Perez Lopez
-                  </p> 
-                  <p>
-                    123456789
-                  </p>
-                </td>
-                  <td><input type="checkbox" id="scales" name="scales" checked></td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>
-                    Maria Perez Lopez
-                  </p>
-                  <p>987654321</p>     
-                </td>
-                  <td><input type="checkbox" id="scales" name="scales" checked></td>          
-                </tr>
-                <tr>
-                  <td>
-                    <p>Juan Mora Alvarado</p>
-                    <p>123498765</p>        
-                  </td>
-                  <td><input type="checkbox" id="scales" name="scales" checked></td>      
-                </tr>
-                <tr>
-                  <td>
-                    <p>Ana Rodriguez Morales</p>
-                    <p>987612345</p>      
-                  </td>
-                  <td><input type="checkbox" id="scales" name="scales" checked></td>       
-                </tr>
-                <tr>
-                  <td>
-                    <p>Carlos Li Ming</p>
-                    <p>654789123</p>
-                  </td>
-                  <td><input type="checkbox" id="scales" name="scales" checked></td>
-                </tr>
-              </thead>
-            </table>
-          </div>
-            <div class="form-section">
-              <label for="datetime">Otro</label>
-              <select name="select">
-                <option value="value1" selected>-</option>
-                <option value="value2">Juan Morales Gomez</option>
-                <option value="value3">Maria Lopez Vargas</option>
-                <option value="value4">Carlos Vindas Alfaro</option>
-            </select>
-          </div>
-          <div class="form-section">
-            <div>
-              <button>Agregar</button>
-            </div>
-          </div>
-          <br>
-
-          <div class="form-section objSalida">  
-            <h3>Objetivos de la salida</h3>
-            <table>
-              <thead>
-                <tr>
-                  
-                  
-                </tr>
-                <tr>
-                  <td>
-                    <p>Limpieza</p>
-                   <table>
-                    <th>horas</th>
-                    <th>minutos</th>
-                    <tr>
-                      <td><input type="number"></td>
-                      <td><input type="number"></td>
-                    </tr>
-                   </table>
-                  </td>
-                  
-                </tr>
-                <tr>
-                  <td>
-                  <p>
-                    Patrullaje
-                  </p>
-                  <table>
-                    <th>horas</th>
-                    <th>minutos</th>
-                    <tr>
-                      <td><input type="number"></td>
-                      <td><input type="number"></td>
-                    </tr>
-                  </table>
-                </td>
-                  
-                  <tr>
-                    <td>
-                      <p>
-                        Otro
-                      </p>
-                      <textarea id="scales" name="scales"rows="5">
-                        
-                      </textarea>
-                    </td>
-                  </tr>
-                </tr>
-              </thead>
-            </table>
-            <button>Otro</button>
-          </div>
-            <br>
-            <div class="form-section">
-              Presupuesto de la salida
-              <table>
-                <thead>
-                <tr>
-                  <th scope="col">Razon</th>
-                  <th scope="col">Asvo</th>
-                  <th scope="col">voluntarios</th>
-                  <th scope="col">area</th>
-                  <th scope="col">extra</th>
-                  <th scope="col">Total</th>
-                </tr>
-                <tr>
-                  <td><input type="text"></td>
-                  <td><input type="number" size="5" value="1000"></td>
-                  <td><input type="number"size="5"></td>
-                  <td><input type="number"size="5"></td>
-                  <td><input type="number"size="5"></td>
-                  <td><input type="number"size="5" readonly="true" value="1000"></td>
-                </tr>
-              </thead>
-            </table>
-            <button>Otro</button>
-            </div>
-
-            <br>
-
-            <div class="form-section">
-              <h3>Equipo Facilitado</h3>
-              <table>
-                <thead>
-                  <tr>
-                    <th scope="col">Descripcion</th>
-                    <th scope="col">Estado</th>
-                    <th scope="col">Fecha de Entrega</th>
-                    <th scope="col">Fecha de Devolucion</th>
-                    
-                  </tr>
-                  <tr>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="date" size="5"></td>
-                    <td><input type="date" size="5"></td>
-                  </tr>
-                </thead>
-              </table>
-              <button>Otro</button>
-              </div>
-              <br>
-              <div class="form-section">
-                <h3>Obervaciones de Flora y Fauna</h3>
-                <table>
-                  <thead>
-                    <tr>
-                      <th scope="col">Especie</th>
-                      <th scope="col">Lugar de observacion</th>
-                      <th scope="col">Momento de observacion</th>
-                    </tr>
-                    <tr>
-                      <td><input type="text"></td>
-                      <td><input type="text"></td>
-                      <td><input type="datetime-local" size="5"></td>
-                    </tr>
-                  </thead>
-                </table>
-                <button>Otro</button>
-                </div>
-                <br>
-
-                <div class="form-section">
-                <h3>Calificacion del sitio</h3>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th scope="col">Aspecto</th>
-                        <th scope="col">Calificacion</th>
-                        <th scope="col">Observaciones</th>
-                      </tr>
-                      <tr>
-                        <td>Acceso</td>
-                        <td><select name="select">
-                          <option value="value5" selected>5</option>
-                          <option value="value6">4</option>
-                          <option value="value7">3</option>
-                          <option value="value8">2</option>
-                          <option value="value8">1</option>
-                        </select>
-                      </td>
-                      <td><textarea id="scales" name="scales"rows="2"></textarea></td>
-                      </tr>
-                      <tr>
-                        <td>Hospedaje</td>
-                        <td><select name="select">
-                          <option value="value5" selected>5</option>
-                          <option value="value6">4</option>
-                          <option value="value7">3</option>
-                          <option value="value8">2</option>
-                          <option value="value8">1</option>
-                        </select>
-                      </td>
-                      <td><textarea id="scales" name="scales"rows="2"></textarea></td>
-                      </tr>
-                      <tr>
-                        <td>Infraestructura</td>
-                        <td><select name="select">
-                          <option value="value5" selected>5</option>
-                          <option value="value6">4</option>
-                          <option value="value7">3</option>
-                          <option value="value8">2</option>
-                          <option value="value8">1</option>
-                        </select>
-                      </td>
-                      <td><textarea id="scales" name="scales"rows="2"></textarea></td>
-                      </tr>
-                      <tr>
-                        <td>Personal</td>
-                        <td><select name="select">
-                          <option value="value5" selected>5</option>
-                          <option value="value6">4</option>
-                          <option value="value7">3</option>
-                          <option value="value8">2</option>
-                          <option value="value8">1</option>
-                        </select>
-                      </td>
-                      <td><textarea id="scales" name="scales"rows="2"></textarea></td>
-                      </tr>
-                    </thead>
-                  </table>
-                  </div>
-
-                  <br>
-
-                  <div class="form-section">
-                    <h3>Recomendaciones de mejora</h3>
-                    <td><textarea id="scales" name="scales"rows="4" cols="60"></textarea></td>
-                  </div>
-                  <br>
-                  <div class="form-section">
-                    <h3>Recomendaciones para otros voluntarios</h3>
-                    <td><textarea id="scales" name="scales"rows="4" cols="60"></textarea></td>
-                  </div>
-                  <br>
-          <div class="form-section">
-            <input type="submit" value="Enviar reporte">
-          </div>
-        </form>
+  <nav class="navbar">
+    <div class="nav-wrapper">
+      <a href="index.html">
+        <img class="nav-logo" src="icons/ASVO_Logo.png" alt="">
+      </a>
+      <menu>
+        <a href="index.html">
+          <li>Actividades</li>
+        </a>
+        <a href="informes.html">
+          <li>Informes</li>
+        </a>
+      </menu>
+      <div class="perfil">
+        <button>perfil</button>
       </div>
-    </section>
+    </div>
+  </nav>
+  <div class="panel">
+    <div class="form-section objSalida">
+      <h3>Objetivos de la salida</h3>
+      <div class="entrada">
+        <h4 class="encabezado">Limpieza</h4>
+        <div class="timeLabel">
+          <p>horas</p>
+          <p>minutos</p>
+        </div>
+        <div class="timeInput">
+          <p><input type="number"></p>
+          <p><input type="number"></p>
+        </div>
+      </div>
+      <div class="entrada">
+        <h4 class="encabezado">Patrullaje</h4>
+        <div class="timeLabel">
+          <p>horas</p>
+          <p>minutos</p>
+        </div>
+        <div class="timeInput">
+          <p><input type="number"></p>
+          <p><input type="number"></p>
+        </div>
+      </div>
+      <p class="agregar otraEntrada">Agregar entrada</p>
+      <div class="entrada"> 
+        <h4 class="encabezado">Otro</h4>
+        <textarea id="scales" name="scales" rows="5"></textarea>
+        <div class="timeLabel">
+          <p>horas</p>
+          <p>minutos</p>
+        </div>
+        <div class="timeInput">
+          <p><input type="number"></p>
+          <p><input type="number"></p>
+        </div>
+      </div>
+      <a href="informe2.html">
+        <button type="button" class="siguiente">Siguiente</button>
+      </a>
+    </div>
+  </div>
+</body>
 
-    </body>
-    
-    </html>
+</html>
